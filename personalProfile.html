@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile - Ty Brassington</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Consolas', monospace;
+            color: #fff;
+            background-color: #1e1e22;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #2c2c36;
+            padding: 0px 0;
+        }
+        
+
+        .profile-img {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            vertical-align: middle;
+        }
+        .profile-img img {
+            border-radius: 50%;
+            width: 65px;
+            height: auto;
+            aspect-ratio: 1 / 1;
+            vertical-align: middle;
+            align-items: center;
+            margin-left: 3px;
+        }
+
+        nav ul {
+            font-family: 'Consolas', monospace;
+            display: flex;
+            list-style: none;
+            gap: 35px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #e85d75;
+        }
+
+        .portfolio {
+            color: #d9b0ff
+        }
+
+        main {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Consolas', monospace;
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: 900;
+            text-align: left;
+            margin: 0 auto;
+            width: fit-content;
+            padding-left: 20px;
+            border-left: 2px solid #888;
+            position: relative;
+        }
+        h1::after {
+            content: '|';
+            font-weight: 200;
+            margin-left: -3px;
+            color: #888;
+            line-height: -3;
+        }
+        
+
+        h2 {
+            font-family: 'Consolas', monospace;
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #888;
+            text-align: center;
+        }
+
+        .h2-header {
+            margin-top: 20px; /* Adjust this value as needed */
+            margin-bottom: 15px; /* Maintain the existing bottom margin */
+            color: #888; /* Ensure text color is consistent */
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .highlight {
+            color: #e85d75;
+        }
+
+        p {
+            font-family: 'Courier', monospace;
+            color: #bbb;
+            font-size: 18px;
+            line-height: 1.6;
+            font-weight: 500;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .section {
+            padding: 40px 0;
+        }
+
+        footer {
+            background-color: #2c2c36;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="profile-img">
+                <img src="profile.jpg" alt="Ty Brassington"><h2 class="h2-header"> Ty Brassington</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#jobs">Jobs</a></li>
+                    <li><a href="#interests">Interests</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a class="portfolio" href="https://github.com/TyBrassington?tab=repositories">Portfolio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="intro">
+                <h2>Welcome to my Personal Profile</h2><br>
+                <h1>Hi, <span class="highlight">I'm Ty</span> a Computer<br>Science Undergrad</h1><br><br>
+                <p>I am currently in undergraduate student in my second year at Simon Fraser University,
+                    currently pursuing a Bachelor in Science, Computing Science, with a minor in Mathematics.
+                    In my spare time, I enjoy playing volleyball, programming machine learning/data science programs, and playing sports video games with friends.</p>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <p>Dogwood Diploma, Ecole Alpha Secondary</p>
+            <p>Currently studying Computer Science at Simon Fraser University</p>
+        </section>
+
+        <section id="jobs" class="section">
+            <h2>Jobs</h2>
+            <p><strong>Current: </strong>Fishmonger at Safeway<br>Grill Cook at Pacific National Exhibition
+            </p>
+            <p><strong>Previous: </strong>Certified Level 2 Umpire for Softball BC</p>
+        </section>
+
+        <section id="interests" class="section">
+            <h2>Interests & Hobbies</h2>
+            <p><strong>Music: </strong>Rap, Pop, R&B</p>
+            <p><strong>Sports: </strong>Volleyball, Golf, Football</p>
+            <p><strong>Favourite Sports Teams: </strong>Seahawks, Canucks</p>
+        </section>
+    </main>
+
+    <footer id="contact" class="section">
+        <h2>Contact Me</h2>
+        <p><strong>Email:</strong> wgb@sfu.ca</p>
+    </footer>
+</body>
+
+</html>
